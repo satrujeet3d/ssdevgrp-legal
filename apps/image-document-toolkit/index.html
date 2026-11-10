@@ -5,21 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Legal and support information for Image &amp; Document Toolkit.">
   <title>Image &amp; Document Toolkit — SSDev.grp</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 18px;
+      display: grid;
+      place-items: center;
+      background: #f4f6fb;
+      color: #202738;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(100%, 640px);
+      padding: 36px;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #e2e7f0;
+      border-radius: 20px;
+      box-shadow: 0 12px 36px rgb(25 42 75 / 9%);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #172b55;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      line-height: 1.2;
+    }
+
+    p { margin: 10px 0; }
+    .publisher { color: #667085; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 10px;
+      background: #315fce;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover { background: #244ca9; }
+    a.support { color: #315fce; }
+
+    @media (max-width: 480px) {
+      main { padding: 28px 20px; }
+      nav { flex-direction: column; }
+    }
+  </style>
 </head>
 <body>
   <main>
     <h1>Image &amp; Document Toolkit</h1>
-    <p>Published by SSDev.grp</p>
-    <p>For app support, contact
-      <a href="mailto:ssdevgrp.appsupport@gmail.com">
+    <p class="publisher">Published by SSDev.grp</p>
+    <p>
+      For app support, contact
+      <a class="support" href="mailto:ssdevgrp.appsupport@gmail.com">
         ssdevgrp.appsupport@gmail.com
       </a>.
     </p>
     <nav aria-label="Legal information">
-      <ul>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-      </ul>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
     </nav>
   </main>
 </body>
