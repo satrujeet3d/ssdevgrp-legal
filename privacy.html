@@ -35,81 +35,108 @@
     </p>
 
     <p>
-      This Privacy Policy describes how Image &amp; Document Toolkit handles
+      This Privacy Policy explains how Image &amp; Document Toolkit handles
       information when you use the Android app.
     </p>
 
     <h2>Information the app uses</h2>
     <p>
-      The app uses the image and PDF files you choose to import, capture,
-      convert, or otherwise process. It also stores local library information,
-      such as file names and creation details, so it can display and manage
-      files in the app.
+      The app uses images and PDF files that you choose to import, capture,
+      convert, or process. It also stores local library information, including
+      file names and related metadata, so it can list and manage your files.
     </p>
-    <p>
-      The app does not require you to create an account.
-    </p>
+    <p>The app does not require you to create an account.</p>
 
     <h2>How files are processed</h2>
     <p>
-      Image and PDF processing is performed on your device. SSDev.grp does not
-      operate a server that receives or stores copies of your files.
+      The app’s image and PDF tools process files on your device. The app does
+      not provide cloud storage or backup to SSDev.grp servers, and the
+      inspected app code contains no feature that uploads My Files content to
+      SSDev.grp.
     </p>
     <p>
-      When you select a file using Android’s file or photo picker, the app
-      accesses the file you selected. If you choose to take pictures, the app
-      uses the camera for that action.
-    </p>
-
-    <h2>Storage and file handling</h2>
-    <p>
-      Files you import or create are stored in app-managed storage on your
-      device so the app can list and process them. SSDev.grp does not keep
-      server-side copies of those files.
-    </p>
-    <p>
-      If you export a file to your Gallery or Downloads, Android saves a
-      separate copy at the destination you selected. That copy is managed
-      separately from the app’s library.
+      When you choose a file through Android’s system picker, the app accesses
+      the file you selected. The picker may show files supplied by other apps
+      or services on your device; their own privacy practices apply.
     </p>
 
-    <h2>Sharing and external services</h2>
+    <h2>Storage and exports</h2>
     <p>
-      The app does not send your files to SSDev.grp. If you choose to export a
-      file or open a PDF using another app, Android passes the file to the
-      destination you selected. That app’s own privacy practices then apply.
+      Imported files and completed outputs are stored in the app’s private
+      My Files storage on your device. The app also stores library metadata,
+      such as file names, in a local database.
     </p>
     <p>
-      Android’s system picker may show files from services connected to your
-      device. If you choose a file from such a service, that provider’s terms
-      and privacy practices may also apply.
+      When you export an image, the app creates a separate copy in
+      Pictures/ImageDocumentToolkit, which may appear in Gallery. When you
+      export a PDF, the app creates a separate copy in
+      Downloads/ImageDocumentToolkit. These exported copies are separate from
+      the files in My Files.
+    </p>
+    <p>
+      The app does not delete completed My Files items or exported files as
+      part of normal processing or routine cleanup. Temporary files used
+      during an unfinished save, crop, camera session, or PDF preview may be
+      cleaned up by the app.
     </p>
 
-    <h2>Advertising and analytics</h2>
+    <h2>Deleting files and app data</h2>
     <p>
-      The app version covered by this policy does not include an advertising,
-      analytics, or crash-reporting SDK. If these services are added in a
-      future version, this policy will be updated to describe their data
-      practices before that version is released.
+      The current version does not provide an in-app option to delete
+      individual My Files items or clear the My Files library.
+    </p>
+    <p>
+      On an Android 15 test device, using Android Settings to clear this app’s
+      storage removed the app-private My Files files and library database.
+      A previously exported Gallery image remained on the device after that
+      action.
+    </p>
+    <p>
+      The effect of uninstalling the app, and the effect of clearing storage
+      on PDF files exported to Downloads, were not verified in this test.
+      Exported copies are separate from My Files; use your device’s Gallery
+      or Files app to manage them.
     </p>
 
     <h2>Permissions</h2>
     <p>
-      The app uses camera access when you choose to take pictures. Android’s
-      file picker provides access to files you select. Storage-related access
-      may be used for export features on older Android versions.
+      The app requests camera access when you choose to take pictures for
+      Create PDF. The camera capture flow is configured without audio
+      recording, and the app does not request microphone access.
+    </p>
+    <p>
+      On Android 9 and older, the app may request storage-write access when
+      you choose to export a file to Gallery or Downloads. Selecting existing
+      images or PDFs uses Android’s system file picker.
+    </p>
+    <p>
+      The inspected merged Android release package also lists
+      RECORD_AUDIO and READ_EXTERNAL_STORAGE declarations contributed or
+      implied by the camera library. The app does not request microphone
+      access, does not record audio in its camera flow, and does not use
+      READ_EXTERNAL_STORAGE to browse your photo library. These declarations
+      may change if the Android configuration is updated before release.
     </p>
 
-    <h2>Data retention and deletion</h2>
+    <h2>Advertising and analytics</h2>
     <p>
-      Imported and created files are stored locally on your device for use by
-      the app. SSDev.grp does not retain copies of those files on its servers.
-      Exported copies are saved separately in the destination you choose.
+      The current app version does not include advertising, analytics, or
+      crash-reporting SDKs and does not show ads. If these services are added
+      in a future version, this Policy will be updated to describe the
+      applicable data practices before that version is released.
     </p>
 
-    <h2>Changes to this policy</h2>
+    <h2>Sharing with other apps</h2>
     <p>
-      This policy may be updated if the app’s features or data practices
+      The app does not share your files with other apps in the background.
+      If you choose to export a file or open a PDF with another app, Android
+      provides that app access for the action you requested. That app’s own
+      terms and privacy practices then apply.
+    </p>
+
+    <h2>Changes to this Policy</h2>
+    <p>
+      This Policy may be updated if the app’s features or data practices
       change. The latest version and its update date will be posted on this
       page.
     </p>
